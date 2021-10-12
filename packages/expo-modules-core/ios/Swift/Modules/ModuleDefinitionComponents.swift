@@ -289,11 +289,11 @@ extension AnyModule {
 
   // MARK: - Objects
 
-  public func objects(_ types: [AnyHostObject.Type]) -> AnyDefinition {
-    return ObjectsDefinition(types: types)
+  public static func objects(_ types: [AnySharedObject.Type]) -> AnyDefinition {
+    return SharedObjectsDefinition(types: types)
   }
 }
 
-public struct ObjectsDefinition: AnyDefinition {
-  let types: [AnyHostObject.Type]
+public struct SharedObjectsDefinition: AnyDefinition {
+  let types: [AnySharedObject.Type]
 }

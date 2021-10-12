@@ -1,5 +1,5 @@
 
-public struct ObjectDefinition: AnyDefinition {
+public struct SharedObjectDefinition: AnyDefinition {
   let name: String?
   let methods: [String: AnyMethod]
 
